@@ -1,6 +1,6 @@
 package Perl6::Junction::Base;
 use strict;
-our $VERSION = '1.40000';
+our $VERSION = '1.50000';
 
 use overload(
     '=='   => "num_eq",
@@ -18,6 +18,8 @@ use overload(
     'bool' => "bool",
     '""'   => sub {shift},
 );
+
+use if ($] >= 5.010001), overload => '~~' => 'match';
 
 sub new {
     my ( $class, @param ) = @_;
