@@ -7,7 +7,7 @@ use Perl6::Junction::None;
 use Perl6::Junction::One;
 
 require Exporter;
-our $VERSION = '1.50000';
+our $VERSION = '1.60000';
 
 our @ISA = qw/ Exporter /;
 my @routines = qw/ all any none one /;
@@ -91,7 +91,6 @@ Returns an object which overloads the following operators:
 
   '<',  '<=', '>',  '>=', '==', '!=', 
   'lt', 'le', 'gt', 'ge', 'eq', 'ne', 
-  '~~'
 
 Returns true only if B<all> arguments test true according to the operator 
 used.
@@ -102,7 +101,6 @@ Returns an object which overloads the following operators:
 
   '<',  '<=', '>',  '>=', '==', '!=', 
   'lt', 'le', 'gt', 'ge', 'eq', 'ne', 
-  '~~'
 
 Returns true if B<any> argument tests true according to the operator used.
 
@@ -112,7 +110,6 @@ Returns an object which overloads the following operators:
 
   '<',  '<=', '>',  '>=', '==', '!=', 
   'lt', 'le', 'gt', 'ge', 'eq', 'ne', 
-  '~~'
 
 Returns true only if B<no> argument tests true according to the operator 
 used.
@@ -123,7 +120,6 @@ Returns an object which overloads the following operators:
 
   '<',  '<=', '>',  '>=', '==', '!=', 
   'lt', 'le', 'gt', 'ge', 'eq', 'ne', 
-  '~~'
 
 Returns true only if B<one and only one> argument tests true according to 
 the operator used.
